@@ -1,4 +1,4 @@
-obj-m := homework1.o homework2.o homework3.o
+obj-m := hello.o ro_file.o param.o
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 
