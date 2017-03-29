@@ -44,7 +44,7 @@ static ssize_t wr_proc_write(struct file *file, const char __user *buffer,
 
     dst[cur_len] = '\0';
     return count; 
-}  
+}
   
 static int wr_proc_open(struct inode *inode, struct file *file)  
 {  
