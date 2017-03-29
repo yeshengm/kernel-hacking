@@ -1,4 +1,4 @@
-obj-m := hello.o ro_file.o param.o
+obj-m := hello.o ro_file.o param.o proc_wr.o
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 
