@@ -29,6 +29,8 @@ curses.noecho()
 while (True):
 	strs = info_to_strs()
 	screen.clear()
+	info = 'pid'.rjust(5) + ' ' + 'comm'.ljust(15) + 'ctx'.rjust(6)
+	screen.addstr(info + '\n')
 	for s in strs:
 		screen.addstr(s + "\n")
 		screen.refresh()
