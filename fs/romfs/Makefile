@@ -10,3 +10,6 @@ ifneq ($(CONFIG_MMU),y)
 romfs-$(CONFIG_ROMFS_ON_MTD) += mmap-nommu.o
 endif
 
+default:
+	make -C /lib/modules/`uname -r`/build SUBDIRS=$(PWD) modules
+
